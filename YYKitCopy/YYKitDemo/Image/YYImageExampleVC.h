@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YYImageExampleVC : UIViewController
+@interface YYImageExampleVC : UITableViewController
 
 @end

@@ -97,6 +97,8 @@
 		0726BB1E1F14728400A6AC65 /* YYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726BB1B1F14728400A6AC65 /* YYRootViewController.m */; };
 		0726BB211F14736700A6AC65 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0726BB201F14736700A6AC65 /* libsqlite3.tbd */; };
 		0726BB231F14738500A6AC65 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0726BB221F14738500A6AC65 /* libz.tbd */; };
+		0726BB271F1475F200A6AC65 /* YYImageExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726BB261F1475F200A6AC65 /* YYImageExampleVC.m */; };
+		0726BB2A1F14779800A6AC65 /* YYImageDisplayExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726BB291F14779800A6AC65 /* YYImageDisplayExampleVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -278,6 +280,10 @@
 		0726BB1B1F14728400A6AC65 /* YYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRootViewController.m; sourceTree = "<group>"; };
 		0726BB201F14736700A6AC65 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0726BB221F14738500A6AC65 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0726BB251F1475F200A6AC65 /* YYImageExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageExampleVC.h; sourceTree = "<group>"; };
+		0726BB261F1475F200A6AC65 /* YYImageExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageExampleVC.m; sourceTree = "<group>"; };
+		0726BB281F14779800A6AC65 /* YYImageDisplayExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageDisplayExampleVC.h; sourceTree = "<group>"; };
+		0726BB291F14779800A6AC65 /* YYImageDisplayExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageDisplayExampleVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,9 +610,10 @@
 			children = (
 				0726BB151F14728400A6AC65 /* AppDelegate.h */,
 				0726BB161F14728400A6AC65 /* AppDelegate.m */,
-				0726BB171F14728400A6AC65 /* Model */,
 				0726BB1A1F14728400A6AC65 /* YYRootViewController.h */,
 				0726BB1B1F14728400A6AC65 /* YYRootViewController.m */,
+				0726BB171F14728400A6AC65 /* Model */,
+				0726BB241F1475E000A6AC65 /* Image */,
 			);
 			path = YYKitDemo;
 			sourceTree = "<group>";
@@ -627,6 +634,17 @@
 				0726BB201F14736700A6AC65 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0726BB241F1475E000A6AC65 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0726BB251F1475F200A6AC65 /* YYImageExampleVC.h */,
+				0726BB261F1475F200A6AC65 /* YYImageExampleVC.m */,
+				0726BB281F14779800A6AC65 /* YYImageDisplayExampleVC.h */,
+				0726BB291F14779800A6AC65 /* YYImageDisplayExampleVC.m */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -712,9 +730,11 @@
 				0726BB1E1F14728400A6AC65 /* YYRootViewController.m in Sources */,
 				0726BB131F14726000A6AC65 /* YYWeakProxy.m in Sources */,
 				0726BAFA1F14726000A6AC65 /* YYTextLine.m in Sources */,
+				0726BB271F1475F200A6AC65 /* YYImageExampleVC.m in Sources */,
 				0726BAEA1F14726000A6AC65 /* YYAnimatedImageView.m in Sources */,
 				0726BB081F14726000A6AC65 /* YYAsyncLayer.m in Sources */,
 				0726BACB1F14726000A6AC65 /* NSObject+YYAdd.m in Sources */,
+				0726BB2A1F14779800A6AC65 /* YYImageDisplayExampleVC.m in Sources */,
 				0726BAFE1F14726000A6AC65 /* NSParagraphStyle+YYText.m in Sources */,
 				0726BAC61F14726000A6AC65 /* NSDate+YYAdd.m in Sources */,
 				0726BAD31F14726000A6AC65 /* UIApplication+YYAdd.m in Sources */,

@@ -15,92 +15,91 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Provide hash, encrypt, encode and some common method for `NSData`.
- 提供 哈希，编码，解码和一些数据通用方法
  */
 @interface NSData (YYAdd)
 
 #pragma mark - Hash
 ///=============================================================================
-/// @name Hash 哈希
+/// @name Hash
 ///=============================================================================
 
 /**
- Returns a lowercase NSString for md2 hash. 返回一个不可以为nil的md2哈希的小写字符串
+ Returns a lowercase NSString for md2 hash.
  */
 - (NSString *)md2String;
 
 /**
- Returns an NSData for md2 hash. 返回一个不可以为nil的md2哈希的数据
+ Returns an NSData for md2 hash.
  */
 - (NSData *)md2Data;
 
 /**
- Returns a lowercase NSString for md4 hash. 返回一个不可以为nil的md4哈希的小写字符串
+ Returns a lowercase NSString for md4 hash.
  */
 - (NSString *)md4String;
 
 /**
- Returns an NSData for md4 hash. 返回一个不可以为nil的md4哈希的数据
+ Returns an NSData for md4 hash.
  */
 - (NSData *)md4Data;
 
 /**
- Returns a lowercase NSString for md5 hash. 返回一个不可以为nil的md5哈希的小写字符串
+ Returns a lowercase NSString for md5 hash.
  */
 - (NSString *)md5String;
 
 /**
- Returns an NSData for md5 hash. 返回一个不可以为nil的md5哈希的数据
+ Returns an NSData for md5 hash.
  */
 - (NSData *)md5Data;
 
 /**
- Returns a lowercase NSString for sha1 hash. 返回一个不可以为nil的sha1哈希的小写字符串
+ Returns a lowercase NSString for sha1 hash.
  */
 - (NSString *)sha1String;
 
 /**
- Returns an NSData for sha1 hash. 返回一个不可以为nil的sha1哈希的数据
+ Returns an NSData for sha1 hash.
  */
 - (NSData *)sha1Data;
 
 /**
- Returns a lowercase NSString for sha224 hash. 返回一个不可以为nil的sha224哈希的小写字符串
+ Returns a lowercase NSString for sha224 hash.
  */
 - (NSString *)sha224String;
 
 /**
- Returns an NSData for sha224 hash. 返回一个不可以为nil的sha224哈希的数据
+ Returns an NSData for sha224 hash.
  */
 - (NSData *)sha224Data;
 
 /**
- Returns a lowercase NSString for sha256 hash. 返回一个不可以为nil的sha256哈希的小写字符串
+ Returns a lowercase NSString for sha256 hash.
  */
 - (NSString *)sha256String;
 
 /**
- Returns an NSData for sha256 hash. 返回一个不可以为nil的sha256哈希的数据
+ Returns an NSData for sha256 hash.
  */
 - (NSData *)sha256Data;
 
 /**
- Returns a lowercase NSString for sha384 hash. 返回一个不可以为nil的sha384哈希的小写字符串
+ Returns a lowercase NSString for sha384 hash.
  */
 - (NSString *)sha384String;
 
 /**
- Returns an NSData for sha384 hash. 返回一个不可以为nil的sha384哈希的数据
+ Returns an NSData for sha384 hash.
  */
 - (NSData *)sha384Data;
 
 /**
- Returns a lowercase NSString for sha512 hash. 返回一个不可以为nil的sha512哈希的小写字符串
+ Returns a lowercase NSString for sha512 hash.
  */
 - (NSString *)sha512String;
 
 /**
- Returns an NSData for sha512 hash. 返回一个不可以为nil的sha384哈希的数据
+ Returns an NSData for sha512 hash.
  */
 - (NSData *)sha512Data;
 

@@ -15,7 +15,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- https://my.oschina.net/u/2361492/blog/526814
  Wrapper for CTRunDelegateRef.
  
  Example:
@@ -29,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
          /// add to attributed string
          CFRelease(ctRunDelegate);
      }
+ 
  */
 @interface YYTextRunDelegate : NSObject <NSCopying, NSCoding>
 

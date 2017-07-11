@@ -22,7 +22,7 @@
     self.classNames = @[].mutableCopy;
     
     [self addCell:@"Model" andClass:@"YYModelExampleVC"];
-    [self addCell:@"Image" andClass:@"YYIamgeExample"];
+    [self addCell:@"Image" andClass:@"YYImageExampleVC"];
     [self addCell:@"Utility" andClass:@"YYUtilityExample"];
     [self addCell:@"Feed List Demo" andClass:@"YYFeedListDemoExample"];
     

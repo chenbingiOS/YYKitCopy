@@ -32,9 +32,8 @@ NSString *const YYTextAttachmentAttributeName = @"YYTextAttachment";
 NSString *const YYTextHighlightAttributeName = @"YYTextHighlight";
 NSString *const YYTextGlyphTransformAttributeName = @"YYTextGlyphTransform";
 
-NSString *const YYTextAttachmentToken = @"\uFFFC"; ///< //\ufffc为对象占位符，目的是当富文本中有图像时，只复制文本信息！！！ 
-NSString *const YYTextTruncationToken = @"\u2026"; ///< \u2026 的意思是表示省略号，是unicode的16进制表示，\u0020的意思是表示空格，是unicode的16进制表示
-
+NSString *const YYTextAttachmentToken = @"\uFFFC";
+NSString *const YYTextTruncationToken = @"\u2026";
 
 
 YYTextAttributeType YYTextAttributeGetType(NSString *name){

@@ -15,58 +15,56 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Provide hash, encrypt, encode and some common method for 'NSString'.
- 提供 哈希，编码，解码和一些字符串通用方法
  */
 @interface NSString (YYAdd)
 
 #pragma mark - Hash
 ///=============================================================================
-/// @name Hash 哈希
+/// @name Hash
 ///=============================================================================
 
 /**
- Returns a lowercase NSString for md2 hash. 返回一个可以为nil的md2哈希的小写字符串
+ Returns a lowercase NSString for md2 hash.
  */
 - (nullable NSString *)md2String;
 
 /**
- Returns a lowercase NSString for md4 hash. 返回一个可以为nil的md4哈希的小写字符串
+ Returns a lowercase NSString for md4 hash.
  */
 - (nullable NSString *)md4String;
 
 /**
- Returns a lowercase NSString for md5 hash. 返回一个可以为nil的md5哈希的小写字符串
+ Returns a lowercase NSString for md5 hash.
  */
 - (nullable NSString *)md5String;
 
 /**
- Returns a lowercase NSString for sha1 hash. 返回一个可以为nil的sha1哈希的小写字符串
+ Returns a lowercase NSString for sha1 hash.
  */
 - (nullable NSString *)sha1String;
 
 /**
- Returns a lowercase NSString for sha224 hash. 返回一个可以为nil的sha224哈希的小写字符串
+ Returns a lowercase NSString for sha224 hash.
  */
 - (nullable NSString *)sha224String;
 
 /**
- Returns a lowercase NSString for sha256 hash. 返回一个可以为nil的sha256哈希的小写字符串
+ Returns a lowercase NSString for sha256 hash.
  */
 - (nullable NSString *)sha256String;
 
 /**
- Returns a lowercase NSString for sha384 hash. 返回一个可以为nil的sha384哈希的小写字符串
+ Returns a lowercase NSString for sha384 hash.
  */
 - (nullable NSString *)sha384String;
 
 /**
- Returns a lowercase NSString for sha512 hash. 返回一个可以为nil的sha512哈希的小写字符串
+ Returns a lowercase NSString for sha512 hash.
  */
 - (nullable NSString *)sha512String;
 
 /**
  Returns a lowercase NSString for hmac using algorithm md5 with key.
- 返回一个可以为nil的小写字符串使用md5算法和关键码
  @param key The hmac key.
  */
 - (nullable NSString *)hmacMD5StringWithKey:(NSString *)key;

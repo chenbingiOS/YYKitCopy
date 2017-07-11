@@ -97,7 +97,7 @@ static void ContainerObjectExample() {
     YYAlbum *album = [YYAlbum modelWithJSON:@"                  \
     {                                                           \
         \"name\" : \"Happy Birthday\",                          \
-        \"photos\" ; [                                          \
+        \"photos\" : [                                          \
                 {                                               \
                       \"url\" : \"http://example.com/1.png\",   \
                       \"desc\": \"Happy~\"                      \
@@ -125,6 +125,9 @@ static void ContainerObjectExample() {
     NSString *albumJSON = [album modelToJSONString];
     NSLog(@"Album: %@", albumJSON);
 }
+
+
+
 
 ///////////////////////////////////////////////////////////////
 #pragma mark Custom Mapper Example

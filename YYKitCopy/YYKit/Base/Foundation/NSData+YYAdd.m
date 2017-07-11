@@ -633,7 +633,6 @@ static const short base64DecodingTable[256] = {
 }
 
 + (NSData *)dataNamed:(NSString *)name {
-    // bundle是一个目录,其中包含了程序会使用到的资源.这些资源包含了如图像,声音,编译好的代码,nib文件(用户也会把bundle称为plug-in).对应bundle,cocoa提供了类NSBundle.
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@""];
     if (!path) return nil;
     NSData *data = [NSData dataWithContentsOfFile:path];
