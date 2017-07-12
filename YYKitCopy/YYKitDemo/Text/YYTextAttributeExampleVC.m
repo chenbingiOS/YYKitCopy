@@ -8,6 +8,7 @@
 
 #import "YYTextAttributeExampleVC.h"
 #import "YYKit.h"
+#import "YYTextExampleHelper.h"
 
 @interface YYTextAttributeExampleVC ()
 
@@ -21,6 +22,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     __weak typeof(self) _self = self;
+    [YYTextExampleHelper addDebugOptionToViewController:self];
     NSMutableAttributedString *text = [NSMutableAttributedString new];
     {
         // 阴影文字
@@ -183,6 +185,42 @@
         [text appendAttributedString:[self padding]];
         [text appendAttributedString:[self padding]];
     }
+    {
+        // 边框
+        NSMutableAttributedString *one = [[NSMutableAttributedString alloc] initWithString:@"Yet Another Link"];
+        one.font = [UIFont boldSystemFontOfSize:30];
+        one.color = [UIColor whiteColor];
+        
+        YYTextShadow *shadow = [YYTextShadow new];
+        shadow.color = [UIColor colorWithWhite:0.000 alpha:0.490];
+        shadow.offset = CGSizeMake(0, 1);
+        shadow.radius = 5;
+        one.textShadow = shadow;
+        
+        YYTextShadow *shadow0 = [YYTextShadow new];
+        shadow0.color = [UIColor colorWithWhite:0.000 alpha:0.20];
+        shadow0.offset = CGSizeMake(0, -1);
+        shadow0.radius = 1.5;
+        
+        YYTextShadow *shadow1 = [YYTextShadow new];
+        shadow1.color = [UIColor colorWithWhite:1 alpha:0.990];
+        shadow1.offset = CGSizeMake(0, 1);
+        shadow1.radius = 5;
+        shadow0.subShadow = shadow1;
+        
+        YYTextShadow *innerShaow0 = [YYTextShadow new];
+        innerShaow0.color = [UIColor colorWithRed:0.851 green:0.311 blue:0.000 alpha:0.780];
+        innerShaow0.offset = CGSizeMake(0, 1);
+        innerShaow0.radius = 1;
+        
+        YYTextHighlight *highlight = [YYTextHighlight new];
+        [highlight setColor:[UIColor colorWithRed:1.000 green:0.795 blue:0.014 alpha:1.000]];
+        [highlight setShadow:shadow0];
+        [highlight setInnerShadow:innerShaow0];
+        [one setTextHighlight:highlight range:one.rangeOfAll];
+        
+        [text appendAttributedString:one];
+    }
     
     YYLabel *label = [YYLabel new];
     label.attributedText = text;
@@ -216,9 +254,7 @@
     label.height = [msg heightForFont:label.font width:label.width]+2*padding;
     label.bottom = (kiOS7Later?64:0);
     [self.view addSubview:label];
-    
-    CGFloat heih = [msg heightForFont:label.font width:label.width];
-    
+
     [UIView animateWithDuration:0.3 animations:^{
         label.top = (kiOS7Later?64:0);
     } completion:^(BOOL finished) {

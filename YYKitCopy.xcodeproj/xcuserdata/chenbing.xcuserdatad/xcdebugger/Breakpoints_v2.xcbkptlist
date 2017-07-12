@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "YYKitCopy/YYKit/Image/YYImage.m"
-            timestampString = "521534339.083206"
+            filePath = "YYKitCopy/YYKitDemo/Text/YYTextExampleHelper.m"
+            timestampString = "521559003.873656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "+imageNamed:"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "+addDebugOptionToViewController:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

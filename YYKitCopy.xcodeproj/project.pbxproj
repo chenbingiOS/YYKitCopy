@@ -715,12 +715,12 @@
 		074E52791F14FA0800E3E939 /* Text */ = {
 			isa = PBXGroup;
 			children = (
+				074E52801F14FB7E00E3E939 /* YYTextExampleHelper.h */,
+				074E52811F14FB7E00E3E939 /* YYTextExampleHelper.m */,
 				074E527A1F14FA2200E3E939 /* YYTextExampleVC.h */,
 				074E527B1F14FA2200E3E939 /* YYTextExampleVC.m */,
 				074E527D1F14FB4B00E3E939 /* YYTextAttributeExampleVC.h */,
 				074E527E1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m */,
-				074E52801F14FB7E00E3E939 /* YYTextExampleHelper.h */,
-				074E52811F14FB7E00E3E939 /* YYTextExampleHelper.m */,
 			);
 			path = Text;
 			sourceTree = "<group>";

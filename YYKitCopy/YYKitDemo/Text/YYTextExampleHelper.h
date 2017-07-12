@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface YYTextExampleHelper : NSObject
+
++(void)addDebugOptionToViewController:(UIViewController *)vc;
++ (void)setDebug:(BOOL)debug;
++ (BOOL)isDebug;
 
 @end
