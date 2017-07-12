@@ -99,6 +99,14 @@
 		0726BB231F14738500A6AC65 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0726BB221F14738500A6AC65 /* libz.tbd */; };
 		0726BB271F1475F200A6AC65 /* YYImageExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726BB261F1475F200A6AC65 /* YYImageExampleVC.m */; };
 		0726BB2A1F14779800A6AC65 /* YYImageDisplayExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726BB291F14779800A6AC65 /* YYImageDisplayExampleVC.m */; };
+		072B8F941F15EF73008D2757 /* YYImageExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 072B8F931F15EF73008D2757 /* YYImageExampleHelper.m */; };
+		0732A5F71F15FCA9008A75AD /* niconiconi@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 072B8F8C1F15ED34008D2757 /* niconiconi@2x.gif */; };
+		0732A5F81F15FCAB008A75AD /* pia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 072B8F8D1F15ED34008D2757 /* pia@2x.png */; };
+		0732A5FB1F15FD25008A75AD /* google@2x.webp in Resources */ = {isa = PBXBuildFile; fileRef = 0732A5FA1F15FD25008A75AD /* google@2x.webp */; };
+		0732A5FD1F15FD2F008A75AD /* wall-e@2x.webp in Resources */ = {isa = PBXBuildFile; fileRef = 0732A5FC1F15FD2F008A75AD /* wall-e@2x.webp */; };
+		0732A6021F1608C4008A75AD /* bpg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0732A5FF1F1608C4008A75AD /* bpg.framework */; };
+		0732A6031F1608C5008A75AD /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0732A6001F1608C4008A75AD /* WebP.framework */; };
+		0732A6041F1608C5008A75AD /* WebP.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0732A6011F1608C4008A75AD /* WebP.sh */; };
 		074E527C1F14FA2200E3E939 /* YYTextExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E527B1F14FA2200E3E939 /* YYTextExampleVC.m */; };
 		074E527F1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E527E1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m */; };
 		074E52821F14FB7E00E3E939 /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E52811F14FB7E00E3E939 /* YYTextExampleHelper.m */; };
@@ -287,6 +295,15 @@
 		0726BB261F1475F200A6AC65 /* YYImageExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageExampleVC.m; sourceTree = "<group>"; };
 		0726BB281F14779800A6AC65 /* YYImageDisplayExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageDisplayExampleVC.h; sourceTree = "<group>"; };
 		0726BB291F14779800A6AC65 /* YYImageDisplayExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageDisplayExampleVC.m; sourceTree = "<group>"; };
+		072B8F8C1F15ED34008D2757 /* niconiconi@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "niconiconi@2x.gif"; sourceTree = "<group>"; };
+		072B8F8D1F15ED34008D2757 /* pia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pia@2x.png"; sourceTree = "<group>"; };
+		072B8F921F15EF73008D2757 /* YYImageExampleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageExampleHelper.h; sourceTree = "<group>"; };
+		072B8F931F15EF73008D2757 /* YYImageExampleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageExampleHelper.m; sourceTree = "<group>"; };
+		0732A5FA1F15FD25008A75AD /* google@2x.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "google@2x.webp"; sourceTree = "<group>"; };
+		0732A5FC1F15FD2F008A75AD /* wall-e@2x.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "wall-e@2x.webp"; sourceTree = "<group>"; };
+		0732A5FF1F1608C4008A75AD /* bpg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = bpg.framework; sourceTree = "<group>"; };
+		0732A6001F1608C4008A75AD /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		0732A6011F1608C4008A75AD /* WebP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = WebP.sh; sourceTree = "<group>"; };
 		074E527A1F14FA2200E3E939 /* YYTextExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextExampleVC.h; sourceTree = "<group>"; };
 		074E527B1F14FA2200E3E939 /* YYTextExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextExampleVC.m; sourceTree = "<group>"; };
 		074E527D1F14FB4B00E3E939 /* YYTextAttributeExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextAttributeExampleVC.h; sourceTree = "<group>"; };
@@ -300,6 +317,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0732A6031F1608C5008A75AD /* WebP.framework in Frameworks */,
+				0732A6021F1608C4008A75AD /* bpg.framework in Frameworks */,
 				0726BB231F14738500A6AC65 /* libz.tbd in Frameworks */,
 				0726BB211F14736700A6AC65 /* libsqlite3.tbd in Frameworks */,
 			);
@@ -328,6 +347,7 @@
 		0726B9FA1F1471B600A6AC65 /* YYKitCopy */ = {
 			isa = PBXGroup;
 			children = (
+				0732A5FE1F1608C4008A75AD /* Vendor */,
 				0726BA121F14726000A6AC65 /* YYKit */,
 				0726BB141F14728400A6AC65 /* YYKitDemo */,
 				0726BA041F1471B600A6AC65 /* Main.storyboard */,
@@ -621,6 +641,7 @@
 				0726BB161F14728400A6AC65 /* AppDelegate.m */,
 				0726BB1A1F14728400A6AC65 /* YYRootViewController.h */,
 				0726BB1B1F14728400A6AC65 /* YYRootViewController.m */,
+				072B8F8A1F15ECDC008D2757 /* Resources */,
 				0726BB171F14728400A6AC65 /* Model */,
 				0726BB241F1475E000A6AC65 /* Image */,
 				074E52791F14FA0800E3E939 /* Text */,
@@ -653,8 +674,39 @@
 				0726BB261F1475F200A6AC65 /* YYImageExampleVC.m */,
 				0726BB281F14779800A6AC65 /* YYImageDisplayExampleVC.h */,
 				0726BB291F14779800A6AC65 /* YYImageDisplayExampleVC.m */,
+				072B8F921F15EF73008D2757 /* YYImageExampleHelper.h */,
+				072B8F931F15EF73008D2757 /* YYImageExampleHelper.m */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		072B8F8A1F15ECDC008D2757 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				072B8F8B1F15ED34008D2757 /* ImageDisplay */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		072B8F8B1F15ED34008D2757 /* ImageDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				072B8F8C1F15ED34008D2757 /* niconiconi@2x.gif */,
+				072B8F8D1F15ED34008D2757 /* pia@2x.png */,
+				0732A5FC1F15FD2F008A75AD /* wall-e@2x.webp */,
+				0732A5FA1F15FD25008A75AD /* google@2x.webp */,
+			);
+			path = ImageDisplay;
+			sourceTree = "<group>";
+		};
+		0732A5FE1F1608C4008A75AD /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0732A5FF1F1608C4008A75AD /* bpg.framework */,
+				0732A6001F1608C4008A75AD /* WebP.framework */,
+				0732A6011F1608C4008A75AD /* WebP.sh */,
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		074E52791F14FA0800E3E939 /* Text */ = {
@@ -729,8 +781,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0732A5F81F15FCAB008A75AD /* pia@2x.png in Resources */,
+				0732A5F71F15FCA9008A75AD /* niconiconi@2x.gif in Resources */,
+				0732A5FB1F15FD25008A75AD /* google@2x.webp in Resources */,
+				0732A5FD1F15FD2F008A75AD /* wall-e@2x.webp in Resources */,
 				0726BA0B1F1471B600A6AC65 /* LaunchScreen.storyboard in Resources */,
 				0726BA081F1471B600A6AC65 /* Assets.xcassets in Resources */,
+				0732A6041F1608C5008A75AD /* WebP.sh in Resources */,
 				0726BA061F1471B600A6AC65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,6 +824,7 @@
 				0726BB0A1F14726000A6AC65 /* YYFileHash.m in Sources */,
 				0726BB001F14726000A6AC65 /* YYTextArchiver.m in Sources */,
 				0726BB021F14726000A6AC65 /* YYTextParser.m in Sources */,
+				072B8F941F15EF73008D2757 /* YYImageExampleHelper.m in Sources */,
 				074E527C1F14FA2200E3E939 /* YYTextExampleVC.m in Sources */,
 				0726BAC31F14726000A6AC65 /* NSArray+YYAdd.m in Sources */,
 				0726BAD51F14726000A6AC65 /* UIBezierPath+YYAdd.m in Sources */,
@@ -952,11 +1010,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6E47G4U83C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YYKitCopy/Vendor",
+				);
 				INFOPLIST_FILE = YYKitCopy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dtise.dt.app.YYKitCopy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -965,11 +1028,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6E47G4U83C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YYKitCopy/Vendor",
+				);
 				INFOPLIST_FILE = YYKitCopy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dtise.dt.app.YYKitCopy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

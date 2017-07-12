@@ -8,8 +8,9 @@
 
 #import "YYImageDisplayExampleVC.h"
 #import "YYKit.h"
+#import "YYImageExampleHelper.h"
 
-@interface YYImageDisplayExampleVC ()
+@interface YYImageDisplayExampleVC () <UIGestureRecognizerDelegate>
 @property (nonatomic, strong) UIScrollView *scrollView;
 @end
 
@@ -29,14 +30,17 @@
     
     UILabel *label = [UILabel new];
     label.backgroundColor = [UIColor clearColor];
+    label.size = CGSizeMake(self.view.width, 60);
     label.top = 20;
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = @"Tap the image to pause/play\n Slide on the image to forward/rewind";
     [self.scrollView addSubview:label];
-    
     self.scrollView.panGestureRecognizer.cancelsTouchesInView = YES;
     
+    [self addImageWithName:@"niconiconi" andText:@"Animated GIF"];
+    [self addImageWithName:@"wall-e" andText:@"Animated WebP"];
+    [self addImageWithName:@"pia" andText:@"Animated PNG (APNG)"];
     
     
 }
@@ -59,6 +63,12 @@
     imageView.top = [(UIView *)[self.scrollView.subviews lastObject] bottom]+30;
     [self.scrollView addSubview:imageView];
     
+    [YYImageExampleHelper addTapControlToAnimatedImageView:imageView];
+    [YYImageExampleHelper addPanControlToAnimatedImageView:imageView];
+    for (UIGestureRecognizer *g in imageView.gestureRecognizers) {
+        g.delegate = self;
+    }
+    
     UILabel *imageLabel = [UILabel new];
     imageLabel.backgroundColor = [UIColor clearColor];
     imageLabel.frame = CGRectMake(0, 0, self.view.width, 20);
@@ -70,6 +80,10 @@
     self.scrollView.contentSize = CGSizeMake(self.view.width, imageLabel.bottom+20);
 }
 
+/* 允许多个手势识别器共同识别 */
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return YES;
+}
 
 
 @end

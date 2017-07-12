@@ -47,7 +47,7 @@
 }
 // 支持的方向
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
+    return UIInterfaceOrientationMaskAll;
 }
 // 首选的方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
