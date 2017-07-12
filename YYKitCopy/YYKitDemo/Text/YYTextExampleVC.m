@@ -22,7 +22,7 @@
     self.classNames = @[].mutableCopy;
     
     [self addCell:@"Text Attributes 1" andClass:@"YYTextAttributeExampleVC"];
-    [self addCell:@"Text Attributes 2" andClass:@"YYTextTagExample"];
+    [self addCell:@"Text Attributes 2" andClass:@"YYTextTagExampleVC"];
     [self addCell:@"Text Attachments" andClass:@"YYTextAttachmentExample"];
     [self addCell:@"Feed List Demo" andClass:@"YYFeedListDemoExample"];
     [self addCell:@"Text Edit" andClass:@"YYTextEditExample"];

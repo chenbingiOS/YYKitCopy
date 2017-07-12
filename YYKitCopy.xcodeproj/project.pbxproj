@@ -111,6 +111,7 @@
 		074E527C1F14FA2200E3E939 /* YYTextExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E527B1F14FA2200E3E939 /* YYTextExampleVC.m */; };
 		074E527F1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E527E1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m */; };
 		074E52821F14FB7E00E3E939 /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E52811F14FB7E00E3E939 /* YYTextExampleHelper.m */; };
+		074E52851F165F8C00E3E939 /* YYTextTagExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E52841F165F8C00E3E939 /* YYTextTagExampleVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -312,6 +313,8 @@
 		074E527E1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextAttributeExampleVC.m; sourceTree = "<group>"; };
 		074E52801F14FB7E00E3E939 /* YYTextExampleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextExampleHelper.h; sourceTree = "<group>"; };
 		074E52811F14FB7E00E3E939 /* YYTextExampleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextExampleHelper.m; sourceTree = "<group>"; };
+		074E52831F165F8C00E3E939 /* YYTextTagExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTagExampleVC.h; sourceTree = "<group>"; };
+		074E52841F165F8C00E3E939 /* YYTextTagExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTagExampleVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -721,6 +724,8 @@
 				074E527B1F14FA2200E3E939 /* YYTextExampleVC.m */,
 				074E527D1F14FB4B00E3E939 /* YYTextAttributeExampleVC.h */,
 				074E527E1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m */,
+				074E52831F165F8C00E3E939 /* YYTextTagExampleVC.h */,
+				074E52841F165F8C00E3E939 /* YYTextTagExampleVC.m */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -862,6 +867,7 @@
 				0726BADA1F14726000A6AC65 /* UIGestureRecognizer+YYAdd.m in Sources */,
 				0726BAE21F14726000A6AC65 /* YYDiskCache.m in Sources */,
 				0726BB051F14726000A6AC65 /* YYTextUtilities.m in Sources */,
+				074E52851F165F8C00E3E939 /* YYTextTagExampleVC.m in Sources */,
 				0726BAD81F14726000A6AC65 /* UIDevice+YYAdd.m in Sources */,
 				0726BB0C1F14726000A6AC65 /* YYKeychain.m in Sources */,
 				0726BAC81F14726000A6AC65 /* NSKeyedUnarchiver+YYAdd.m in Sources */,
