@@ -1,33 +1,38 @@
 //
-//  YYRootViewController.m
-//  YYTest
+//  YYTextExampleVC.m
+//  YYKitCopy
 //
-//  Created by 陈冰 on 2017/7/10.
-//  Copyright © 2017年 GLAC. All rights reserved.
+//  Created by 陈冰 on 2017/7/11.
+//  Copyright © 2017年 DTise. All rights reserved.
 //
 
-#import "YYRootViewController.h"
+#import "YYTextExampleVC.h"
 
-@interface YYRootViewController ()
+@interface YYTextExampleVC ()
 @property (nonatomic, strong) NSMutableArray *titles;
 @property (nonatomic, strong) NSMutableArray *classNames;
 @end
 
-@implementation YYRootViewController
+@implementation YYTextExampleVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"YYKit Example";
+
     self.titles = @[].mutableCopy;
     self.classNames = @[].mutableCopy;
     
-    [self addCell:@"Model" andClass:@"YYModelExampleVC"];
-    [self addCell:@"Image" andClass:@"YYImageExampleVC"];
-    [self addCell:@"Text" andClass:@"YYTextExampleVC"];
-    [self addCell:@"Utility"
-         andClass:@"YYUtilityExample"];
+    [self addCell:@"Text Attributes 1" andClass:@"YYTextAttributeExampleVC"];
+    [self addCell:@"Text Attributes 2" andClass:@"YYTextTagExample"];
+    [self addCell:@"Text Attachments" andClass:@"YYTextAttachmentExample"];
     [self addCell:@"Feed List Demo" andClass:@"YYFeedListDemoExample"];
-    
+    [self addCell:@"Text Edit" andClass:@"YYTextEditExample"];
+    [self addCell:@"Text Parser (Markdown)" andClass:@"YYTextMarkdownExample"];
+    [self addCell:@"Text Parser (Emoticon)" andClass:@"YYTextEmoticonExample"];
+    [self addCell:@"Text Binding" andClass:@"YYTextBindingExample"];
+    [self addCell:@"Copy and Paste" andClass:@"YYTextCopyPasteExample"];
+    [self addCell:@"Undo and Redo" andClass:@"YYTextUndoRedoExample"];
+    [self addCell:@"Ruby Annotation" andClass:@"YYTextRubyExample"];
+    [self addCell:@"Async Display" andClass:@"YYTextAsyncExample"];
     [self.tableView reloadData];
 }
 
@@ -59,5 +64,6 @@
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
 
 @end
