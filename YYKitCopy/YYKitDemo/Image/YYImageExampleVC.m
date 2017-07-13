@@ -20,8 +20,8 @@
     self.titles = @[].mutableCopy;
     self.classNames = @[].mutableCopy;
     [self addCell:@"Animated Image" andClass:@"YYImageDisplayExampleVC"];
-    [self addCell:@"Progressive Image" andClass:@"YYImageProgressiveExample"];
-    [self addCell:@"Web Image" andClass:@"YYWebImageExample"];
+    [self addCell:@"Progressive Image" andClass:@"YYImageProgressiveExampleVC"];
+    [self addCell:@"Web Image" andClass:@"YYWebImageExampleVC"];
     [self addCell:@"Benchmark" andClass:@"YYImageBenchmark"];
     [self.tableView reloadData];
 }

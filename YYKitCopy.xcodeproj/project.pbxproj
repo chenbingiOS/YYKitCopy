@@ -112,6 +112,14 @@
 		074E527F1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E527E1F14FB4B00E3E939 /* YYTextAttributeExampleVC.m */; };
 		074E52821F14FB7E00E3E939 /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E52811F14FB7E00E3E939 /* YYTextExampleHelper.m */; };
 		074E52851F165F8C00E3E939 /* YYTextTagExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074E52841F165F8C00E3E939 /* YYTextTagExampleVC.m */; };
+		078A1AE61F16FE6F00B9783A /* YYImageProgressiveExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */; };
+		078A1AFB1F176CC400B9783A /* mew_baseline.gif in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF51F176CC400B9783A /* mew_baseline.gif */; };
+		078A1AFC1F176CC400B9783A /* mew_baseline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF61F176CC400B9783A /* mew_baseline.jpg */; };
+		078A1AFD1F176CC400B9783A /* mew_baseline.png in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF71F176CC400B9783A /* mew_baseline.png */; };
+		078A1AFE1F176CC400B9783A /* mew_interlaced.gif in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF81F176CC400B9783A /* mew_interlaced.gif */; };
+		078A1AFF1F176CC400B9783A /* mew_interlaced.png in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF91F176CC400B9783A /* mew_interlaced.png */; };
+		078A1B001F176CC400B9783A /* mew_progressive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AFA1F176CC400B9783A /* mew_progressive.jpg */; };
+		078A1B091F177C3500B9783A /* YYWebImageExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A1B081F177C3500B9783A /* YYWebImageExampleVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -315,6 +323,16 @@
 		074E52811F14FB7E00E3E939 /* YYTextExampleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextExampleHelper.m; sourceTree = "<group>"; };
 		074E52831F165F8C00E3E939 /* YYTextTagExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTagExampleVC.h; sourceTree = "<group>"; };
 		074E52841F165F8C00E3E939 /* YYTextTagExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTagExampleVC.m; sourceTree = "<group>"; };
+		078A1AE41F16FE6F00B9783A /* YYImageProgressiveExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageProgressiveExampleVC.h; sourceTree = "<group>"; };
+		078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageProgressiveExampleVC.m; sourceTree = "<group>"; };
+		078A1AF51F176CC400B9783A /* mew_baseline.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mew_baseline.gif; sourceTree = "<group>"; };
+		078A1AF61F176CC400B9783A /* mew_baseline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mew_baseline.jpg; sourceTree = "<group>"; };
+		078A1AF71F176CC400B9783A /* mew_baseline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mew_baseline.png; sourceTree = "<group>"; };
+		078A1AF81F176CC400B9783A /* mew_interlaced.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mew_interlaced.gif; sourceTree = "<group>"; };
+		078A1AF91F176CC400B9783A /* mew_interlaced.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mew_interlaced.png; sourceTree = "<group>"; };
+		078A1AFA1F176CC400B9783A /* mew_progressive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mew_progressive.jpg; sourceTree = "<group>"; };
+		078A1B071F177C3500B9783A /* YYWebImageExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWebImageExampleVC.h; sourceTree = "<group>"; };
+		078A1B081F177C3500B9783A /* YYWebImageExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWebImageExampleVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -675,12 +693,16 @@
 		0726BB241F1475E000A6AC65 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				072B8F921F15EF73008D2757 /* YYImageExampleHelper.h */,
+				072B8F931F15EF73008D2757 /* YYImageExampleHelper.m */,
 				0726BB251F1475F200A6AC65 /* YYImageExampleVC.h */,
 				0726BB261F1475F200A6AC65 /* YYImageExampleVC.m */,
 				0726BB281F14779800A6AC65 /* YYImageDisplayExampleVC.h */,
 				0726BB291F14779800A6AC65 /* YYImageDisplayExampleVC.m */,
-				072B8F921F15EF73008D2757 /* YYImageExampleHelper.h */,
-				072B8F931F15EF73008D2757 /* YYImageExampleHelper.m */,
+				078A1AE41F16FE6F00B9783A /* YYImageProgressiveExampleVC.h */,
+				078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */,
+				078A1B071F177C3500B9783A /* YYWebImageExampleVC.h */,
+				078A1B081F177C3500B9783A /* YYWebImageExampleVC.m */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -690,6 +712,7 @@
 			children = (
 				0732A60C1F1616C9008A75AD /* EmoticonWeibo.bundle */,
 				0732A60D1F1616C9008A75AD /* ResourceTwitter.bundle */,
+				078A1AF41F176CC400B9783A /* ImageProgressive */,
 				072B8F8B1F15ED34008D2757 /* ImageDisplay */,
 			);
 			path = Resources;
@@ -728,6 +751,19 @@
 				074E52841F165F8C00E3E939 /* YYTextTagExampleVC.m */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		078A1AF41F176CC400B9783A /* ImageProgressive */ = {
+			isa = PBXGroup;
+			children = (
+				078A1AF51F176CC400B9783A /* mew_baseline.gif */,
+				078A1AF61F176CC400B9783A /* mew_baseline.jpg */,
+				078A1AF71F176CC400B9783A /* mew_baseline.png */,
+				078A1AF81F176CC400B9783A /* mew_interlaced.gif */,
+				078A1AF91F176CC400B9783A /* mew_interlaced.png */,
+				078A1AFA1F176CC400B9783A /* mew_progressive.jpg */,
+			);
+			path = ImageProgressive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -790,14 +826,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0732A60E1F1616C9008A75AD /* EmoticonWeibo.bundle in Resources */,
+				078A1B001F176CC400B9783A /* mew_progressive.jpg in Resources */,
 				0732A5F81F15FCAB008A75AD /* pia@2x.png in Resources */,
+				078A1AFF1F176CC400B9783A /* mew_interlaced.png in Resources */,
+				078A1AFD1F176CC400B9783A /* mew_baseline.png in Resources */,
 				0732A5F71F15FCA9008A75AD /* niconiconi@2x.gif in Resources */,
 				0732A5FD1F15FD2F008A75AD /* wall-e@2x.webp in Resources */,
 				0726BA0B1F1471B600A6AC65 /* LaunchScreen.storyboard in Resources */,
+				078A1AFE1F176CC400B9783A /* mew_interlaced.gif in Resources */,
 				0726BA081F1471B600A6AC65 /* Assets.xcassets in Resources */,
 				0732A6041F1608C5008A75AD /* WebP.sh in Resources */,
+				078A1AFC1F176CC400B9783A /* mew_baseline.jpg in Resources */,
 				0726BA061F1471B600A6AC65 /* Main.storyboard in Resources */,
 				0732A60F1F1616C9008A75AD /* ResourceTwitter.bundle in Resources */,
+				078A1AFB1F176CC400B9783A /* mew_baseline.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +882,7 @@
 				0726BAC51F14726000A6AC65 /* NSData+YYAdd.m in Sources */,
 				0726BAEC1F14726000A6AC65 /* YYImage.m in Sources */,
 				0726BAF81F14726000A6AC65 /* YYTextKeyboardManager.m in Sources */,
+				078A1B091F177C3500B9783A /* YYWebImageExampleVC.m in Sources */,
 				0726BADC1F14726000A6AC65 /* UIScreen+YYAdd.m in Sources */,
 				0726BAEE1F14726000A6AC65 /* YYImageCoder.m in Sources */,
 				0726BAFF1F14726000A6AC65 /* UIPasteboard+YYText.m in Sources */,
@@ -883,6 +926,7 @@
 				0726BAF11F14726000A6AC65 /* YYWebImageOperation.m in Sources */,
 				0726BAF51F14726000A6AC65 /* YYTextDebugOption.m in Sources */,
 				0726BAE81F14726000A6AC65 /* UIButton+YYWebImage.m in Sources */,
+				078A1AE61F16FE6F00B9783A /* YYImageProgressiveExampleVC.m in Sources */,
 				0726BAFD1F14726000A6AC65 /* NSAttributedString+YYText.m in Sources */,
 				0726BAD61F14726000A6AC65 /* UIColor+YYAdd.m in Sources */,
 				0726BB041F14726000A6AC65 /* YYTextRunDelegate.m in Sources */,

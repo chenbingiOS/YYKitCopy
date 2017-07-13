@@ -73,6 +73,16 @@
     self.window.backgroundColor = [UIColor grayColor];
     [self.window makeKeyWindow];
 
+    
+//    NSArray *localeIdentifiers = [NSLocale availableLocaleIdentifiers];
+//    NSLog(@"%@", localeIdentifiers);
+//    
+//    NSLog(@"%@", NSLocale.currentLocale.localeIdentifier);
+//    
+//    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+//    NSString *str = [locale displayNameForKey:NSLocaleIdentifier value:@"en_AD"];
+//    NSLog(@"%@", str);
+    
     return YES;
 }
 
