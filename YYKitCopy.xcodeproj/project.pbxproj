@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071146F41F18D54B00C64FB5 /* YYBPGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 071146F31F18D54B00C64FB5 /* YYBPGCoder.m */; };
+		071146F61F18D7CA00C64FB5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071146F51F18D7CA00C64FB5 /* ImageIO.framework */; };
+		071146F81F18D7DB00C64FB5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071146F71F18D7DB00C64FB5 /* MobileCoreServices.framework */; };
 		0726B9FD1F1471B600A6AC65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726B9FC1F1471B600A6AC65 /* main.m */; };
 		0726BA061F1471B600A6AC65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0726BA041F1471B600A6AC65 /* Main.storyboard */; };
 		0726BA081F1471B600A6AC65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0726BA071F1471B600A6AC65 /* Assets.xcassets */; };
@@ -137,6 +140,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071146F21F18D54B00C64FB5 /* YYBPGCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYBPGCoder.h; sourceTree = "<group>"; };
+		071146F31F18D54B00C64FB5 /* YYBPGCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBPGCoder.m; sourceTree = "<group>"; };
+		071146F51F18D7CA00C64FB5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		071146F71F18D7DB00C64FB5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0726B9F81F1471B600A6AC65 /* YYKitCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYKitCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0726B9FC1F1471B600A6AC65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0726BA051F1471B600A6AC65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -370,6 +377,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071146F81F18D7DB00C64FB5 /* MobileCoreServices.framework in Frameworks */,
+				071146F61F18D7CA00C64FB5 /* ImageIO.framework in Frameworks */,
 				0732A6031F1608C5008A75AD /* WebP.framework in Frameworks */,
 				0732A6021F1608C4008A75AD /* bpg.framework in Frameworks */,
 				0726BB231F14738500A6AC65 /* libz.tbd in Frameworks */,
@@ -714,6 +723,8 @@
 		0726BB1F1F14736600A6AC65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				071146F71F18D7DB00C64FB5 /* MobileCoreServices.framework */,
+				071146F51F18D7CA00C64FB5 /* ImageIO.framework */,
 				0726BB221F14738500A6AC65 /* libz.tbd */,
 				0726BB201F14736700A6AC65 /* libsqlite3.tbd */,
 			);
@@ -735,6 +746,8 @@
 				078A1B081F177C3500B9783A /* YYWebImageExampleVC.m */,
 				074FA41B1F1873880017F627 /* YYImageBenchmarkVC.h */,
 				074FA41C1F1873880017F627 /* YYImageBenchmarkVC.m */,
+				071146F21F18D54B00C64FB5 /* YYBPGCoder.h */,
+				071146F31F18D54B00C64FB5 /* YYBPGCoder.m */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -952,6 +965,7 @@
 				078A1B091F177C3500B9783A /* YYWebImageExampleVC.m in Sources */,
 				0726BADC1F14726000A6AC65 /* UIScreen+YYAdd.m in Sources */,
 				0726BAEE1F14726000A6AC65 /* YYImageCoder.m in Sources */,
+				071146F41F18D54B00C64FB5 /* YYBPGCoder.m in Sources */,
 				0726BAFF1F14726000A6AC65 /* UIPasteboard+YYText.m in Sources */,
 				0726BAE31F14726000A6AC65 /* YYKVStorage.m in Sources */,
 				0726BAD71F14726000A6AC65 /* UIControl+YYAdd.m in Sources */,
