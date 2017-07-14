@@ -10,10 +10,11 @@
 #import "YYKit.h"
 #import "YYTextExampleHelper.h"
 
+
 @interface YYTextAttachmentExampleVC ()
 @property (nonatomic, strong) YYLabel *label;
 @end
-
+#pragma mark - Test
 @implementation YYTextAttachmentExampleVC
 
 - (void)viewDidLoad {
