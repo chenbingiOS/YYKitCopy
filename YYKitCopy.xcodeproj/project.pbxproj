@@ -125,6 +125,7 @@
 		074FA4181F1866270017F627 /* ermilio_q20.bpg in Resources */ = {isa = PBXBuildFile; fileRef = 074FA40C1F1866270017F627 /* ermilio_q20.bpg */; };
 		074FA4191F1866270017F627 /* ermilio_q85.webp in Resources */ = {isa = PBXBuildFile; fileRef = 074FA40D1F1866270017F627 /* ermilio_q85.webp */; };
 		074FA41A1F1866270017F627 /* ermilio_q90.webp in Resources */ = {isa = PBXBuildFile; fileRef = 074FA40E1F1866270017F627 /* ermilio_q90.webp */; };
+		074FA41D1F1873880017F627 /* YYImageBenchmarkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FA41C1F1873880017F627 /* YYImageBenchmarkVC.m */; };
 		078A1AE61F16FE6F00B9783A /* YYImageProgressiveExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */; };
 		078A1AFB1F176CC400B9783A /* mew_baseline.gif in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF51F176CC400B9783A /* mew_baseline.gif */; };
 		078A1AFC1F176CC400B9783A /* mew_baseline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF61F176CC400B9783A /* mew_baseline.jpg */; };
@@ -350,6 +351,8 @@
 		074FA40C1F1866270017F627 /* ermilio_q20.bpg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_q20.bpg; sourceTree = "<group>"; };
 		074FA40D1F1866270017F627 /* ermilio_q85.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_q85.webp; sourceTree = "<group>"; };
 		074FA40E1F1866270017F627 /* ermilio_q90.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_q90.webp; sourceTree = "<group>"; };
+		074FA41B1F1873880017F627 /* YYImageBenchmarkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageBenchmarkVC.h; sourceTree = "<group>"; };
+		074FA41C1F1873880017F627 /* YYImageBenchmarkVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageBenchmarkVC.m; sourceTree = "<group>"; };
 		078A1AE41F16FE6F00B9783A /* YYImageProgressiveExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageProgressiveExampleVC.h; sourceTree = "<group>"; };
 		078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageProgressiveExampleVC.m; sourceTree = "<group>"; };
 		078A1AF51F176CC400B9783A /* mew_baseline.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mew_baseline.gif; sourceTree = "<group>"; };
@@ -730,6 +733,8 @@
 				078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */,
 				078A1B071F177C3500B9783A /* YYWebImageExampleVC.h */,
 				078A1B081F177C3500B9783A /* YYWebImageExampleVC.m */,
+				074FA41B1F1873880017F627 /* YYImageBenchmarkVC.h */,
+				074FA41C1F1873880017F627 /* YYImageBenchmarkVC.m */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -919,6 +924,7 @@
 				0726BAE51F14726000A6AC65 /* _YYWebImageSetter.m in Sources */,
 				0726BAD01F14726000A6AC65 /* NSTimer+YYAdd.m in Sources */,
 				0726BAE61F14726000A6AC65 /* CALayer+YYWebImage.m in Sources */,
+				074FA41D1F1873880017F627 /* YYImageBenchmarkVC.m in Sources */,
 				0726BB1E1F14728400A6AC65 /* YYRootViewController.m in Sources */,
 				0726BB131F14726000A6AC65 /* YYWeakProxy.m in Sources */,
 				0726BAFA1F14726000A6AC65 /* YYTextLine.m in Sources */,

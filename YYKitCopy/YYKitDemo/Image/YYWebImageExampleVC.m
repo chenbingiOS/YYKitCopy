@@ -38,7 +38,7 @@
     _indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     _indicator.center = CGPointMake(self.width/2, self.height/2);
     _indicator.hidden = YES;
-    //[self.contentView addSubview:_indicator]; //use progress bar instead..
+    [self.contentView addSubview:_indicator]; //use progress bar instead..
 
     _label = [UILabel new];
     _label.size = self.size;
@@ -51,11 +51,11 @@
     
     CGFloat lineHieht = 4;
     _porgressLayer = [CAShapeLayer layer];
-    _porgressLayer.size = CGSizeMake(0, _webImageView.height/2);
+    _porgressLayer.size = CGSizeMake(_webImageView.width, lineHieht);
+    _porgressLayer.lineWidth = lineHieht;
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(0, _porgressLayer.height/2)];
     [path addLineToPoint:CGPointMake(_webImageView.width, _porgressLayer.height/2)];
-    _porgressLayer.lineWidth = lineHieht;
     _porgressLayer.path = path.CGPath;
     _porgressLayer.strokeColor = [UIColor colorWithRed:0.000 green:0.640 blue:1.000 alpha:0.720].CGColor;
     _porgressLayer.lineCap = kCALineCapButt;
@@ -96,9 +96,7 @@
             _self.porgressLayer.hidden = YES;
             [_self.indicator stopAnimating];
             _self.indicator.hidden = YES;
-            if (!image) {
-                _self.label.hidden = YES;
-            }
+            if (!image) _self.label.hidden = YES;
         }
     }];
 }
@@ -115,6 +113,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Reload" style:UIBarButtonItemStylePlain target:self action:@selector(reload)];
     self.navigationItem.rightBarButtonItem = button;
@@ -168,6 +167,24 @@
     [self scrollViewDidScroll:self.tableView];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (kiOS7Later) {
+        self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    }
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    if (kiOS7Later) {
+        self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
+        self.navigationController.navigationBar.tintColor = nil;
+    }
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+}
+
 - (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
     return NO;
 }
@@ -175,6 +192,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _imageLinks.count * 4;
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return kCellHeight;
 }
@@ -182,11 +200,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     YYWebImageExampleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) cell = [[YYWebImageExampleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    [cell setImageURL:[NSURL URLWithString:_imageLinks[indexPath.row]]];
+    [cell setImageURL:[NSURL URLWithString:_imageLinks[indexPath.row%_imageLinks.count]]];
     return cell;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    /// 实现了一个 在滑动的时候，可见的cell有缩小，产生视差效果
     CGFloat viewHeight = scrollView.height + scrollView.contentInset.top;
     for (YYWebImageExampleCell *cell in [self.tableView visibleCells]) {
         CGFloat y = cell.centerY - scrollView.contentOffset.y;
@@ -202,7 +222,13 @@
     }
 }
 
-- (void)reload {}
-
+/**
+ 刷新数据
+ */
+- (void)reload {
+    [[YYImageCache sharedCache].memoryCache removeAllObjects];
+    [[YYImageCache sharedCache].diskCache removeAllObjectsWithBlock:^{}];
+    [self.tableView performSelector:@selector(reloadData) afterDelay:0.1];
+}
 
 @end

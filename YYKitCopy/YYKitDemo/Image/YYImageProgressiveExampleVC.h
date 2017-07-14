@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 有进度的加载图片
+ */
 @interface YYImageProgressiveExampleVC : UIViewController
 
 @end

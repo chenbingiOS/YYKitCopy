@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 图片展示
+ */
 @interface YYImageDisplayExampleVC : UIViewController
 
 @end

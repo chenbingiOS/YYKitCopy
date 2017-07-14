@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 从网上加载图片
+ */
 @interface YYWebImageExampleVC : UITableViewController
 
 @end
