@@ -129,6 +129,7 @@
 		074FA4191F1866270017F627 /* ermilio_q85.webp in Resources */ = {isa = PBXBuildFile; fileRef = 074FA40D1F1866270017F627 /* ermilio_q85.webp */; };
 		074FA41A1F1866270017F627 /* ermilio_q90.webp in Resources */ = {isa = PBXBuildFile; fileRef = 074FA40E1F1866270017F627 /* ermilio_q90.webp */; };
 		074FA41D1F1873880017F627 /* YYImageBenchmarkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FA41C1F1873880017F627 /* YYImageBenchmarkVC.m */; };
+		0776F4961F19B913001C0738 /* EmoticonQQ.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0776F4951F19B913001C0738 /* EmoticonQQ.bundle */; };
 		078A1AE61F16FE6F00B9783A /* YYImageProgressiveExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */; };
 		078A1AFB1F176CC400B9783A /* mew_baseline.gif in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF51F176CC400B9783A /* mew_baseline.gif */; };
 		078A1AFC1F176CC400B9783A /* mew_baseline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF61F176CC400B9783A /* mew_baseline.jpg */; };
@@ -360,6 +361,7 @@
 		074FA40E1F1866270017F627 /* ermilio_q90.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_q90.webp; sourceTree = "<group>"; };
 		074FA41B1F1873880017F627 /* YYImageBenchmarkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageBenchmarkVC.h; sourceTree = "<group>"; };
 		074FA41C1F1873880017F627 /* YYImageBenchmarkVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageBenchmarkVC.m; sourceTree = "<group>"; };
+		0776F4951F19B913001C0738 /* EmoticonQQ.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonQQ.bundle; sourceTree = "<group>"; };
 		078A1AE41F16FE6F00B9783A /* YYImageProgressiveExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageProgressiveExampleVC.h; sourceTree = "<group>"; };
 		078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageProgressiveExampleVC.m; sourceTree = "<group>"; };
 		078A1AF51F176CC400B9783A /* mew_baseline.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mew_baseline.gif; sourceTree = "<group>"; };
@@ -755,6 +757,7 @@
 		072B8F8A1F15ECDC008D2757 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0776F4951F19B913001C0738 /* EmoticonQQ.bundle */,
 				0732A60C1F1616C9008A75AD /* EmoticonWeibo.bundle */,
 				0732A60D1F1616C9008A75AD /* ResourceTwitter.bundle */,
 				074FA4021F1866270017F627 /* Compare */,
@@ -905,6 +908,7 @@
 				074FA4101F1866270017F627 /* dribbble256_imageio.png in Resources */,
 				074FA4121F1866270017F627 /* dribbble64_imageio.png in Resources */,
 				074FA4191F1866270017F627 /* ermilio_q85.webp in Resources */,
+				0776F4961F19B913001C0738 /* EmoticonQQ.bundle in Resources */,
 				0726BA0B1F1471B600A6AC65 /* LaunchScreen.storyboard in Resources */,
 				078A1AFE1F176CC400B9783A /* mew_interlaced.gif in Resources */,
 				074FA4131F1866270017F627 /* ermilio.gif in Resources */,
