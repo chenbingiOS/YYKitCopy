@@ -130,6 +130,8 @@
 		074FA41A1F1866270017F627 /* ermilio_q90.webp in Resources */ = {isa = PBXBuildFile; fileRef = 074FA40E1F1866270017F627 /* ermilio_q90.webp */; };
 		074FA41D1F1873880017F627 /* YYImageBenchmarkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 074FA41C1F1873880017F627 /* YYImageBenchmarkVC.m */; };
 		0776F4961F19B913001C0738 /* EmoticonQQ.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0776F4951F19B913001C0738 /* EmoticonQQ.bundle */; };
+		0776F4991F19CD86001C0738 /* YYTextEditExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776F4981F19CD86001C0738 /* YYTextEditExampleVC.m */; };
+		0776F49C1F1B580F001C0738 /* YYTextMarkdownExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776F49B1F1B580F001C0738 /* YYTextMarkdownExampleVC.m */; };
 		078A1AE61F16FE6F00B9783A /* YYImageProgressiveExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */; };
 		078A1AFB1F176CC400B9783A /* mew_baseline.gif in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF51F176CC400B9783A /* mew_baseline.gif */; };
 		078A1AFC1F176CC400B9783A /* mew_baseline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 078A1AF61F176CC400B9783A /* mew_baseline.jpg */; };
@@ -362,6 +364,10 @@
 		074FA41B1F1873880017F627 /* YYImageBenchmarkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageBenchmarkVC.h; sourceTree = "<group>"; };
 		074FA41C1F1873880017F627 /* YYImageBenchmarkVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageBenchmarkVC.m; sourceTree = "<group>"; };
 		0776F4951F19B913001C0738 /* EmoticonQQ.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonQQ.bundle; sourceTree = "<group>"; };
+		0776F4971F19CD86001C0738 /* YYTextEditExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextEditExampleVC.h; sourceTree = "<group>"; };
+		0776F4981F19CD86001C0738 /* YYTextEditExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextEditExampleVC.m; sourceTree = "<group>"; };
+		0776F49A1F1B580F001C0738 /* YYTextMarkdownExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextMarkdownExampleVC.h; sourceTree = "<group>"; };
+		0776F49B1F1B580F001C0738 /* YYTextMarkdownExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextMarkdownExampleVC.m; sourceTree = "<group>"; };
 		078A1AE41F16FE6F00B9783A /* YYImageProgressiveExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageProgressiveExampleVC.h; sourceTree = "<group>"; };
 		078A1AE51F16FE6F00B9783A /* YYImageProgressiveExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageProgressiveExampleVC.m; sourceTree = "<group>"; };
 		078A1AF51F176CC400B9783A /* mew_baseline.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mew_baseline.gif; sourceTree = "<group>"; };
@@ -800,6 +806,10 @@
 				074E52841F165F8C00E3E939 /* YYTextTagExampleVC.m */,
 				074FA3FF1F1865F60017F627 /* YYTextAttachmentExampleVC.h */,
 				074FA4001F1865F60017F627 /* YYTextAttachmentExampleVC.m */,
+				0776F4971F19CD86001C0738 /* YYTextEditExampleVC.h */,
+				0776F4981F19CD86001C0738 /* YYTextEditExampleVC.m */,
+				0776F49A1F1B580F001C0738 /* YYTextMarkdownExampleVC.h */,
+				0776F49B1F1B580F001C0738 /* YYTextMarkdownExampleVC.m */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -943,6 +953,7 @@
 				0726BAE61F14726000A6AC65 /* CALayer+YYWebImage.m in Sources */,
 				074FA41D1F1873880017F627 /* YYImageBenchmarkVC.m in Sources */,
 				0726BB1E1F14728400A6AC65 /* YYRootViewController.m in Sources */,
+				0776F4991F19CD86001C0738 /* YYTextEditExampleVC.m in Sources */,
 				0726BB131F14726000A6AC65 /* YYWeakProxy.m in Sources */,
 				0726BAFA1F14726000A6AC65 /* YYTextLine.m in Sources */,
 				0726BB271F1475F200A6AC65 /* YYImageExampleVC.m in Sources */,
@@ -1007,6 +1018,7 @@
 				0726BB0E1F14726000A6AC65 /* YYSentinel.m in Sources */,
 				0726BAF21F14726000A6AC65 /* NSObject+YYModel.m in Sources */,
 				0726BACE1F14726000A6AC65 /* NSString+YYAdd.m in Sources */,
+				0776F49C1F1B580F001C0738 /* YYTextMarkdownExampleVC.m in Sources */,
 				0726BAEF1F14726000A6AC65 /* YYSpriteSheetImage.m in Sources */,
 				0726BAF11F14726000A6AC65 /* YYWebImageOperation.m in Sources */,
 				0726BAF51F14726000A6AC65 /* YYTextDebugOption.m in Sources */,

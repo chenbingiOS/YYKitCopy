@@ -14,7 +14,7 @@
 @interface YYTextAttachmentExampleVC () <UIGestureRecognizerDelegate>
 @property (nonatomic, strong) YYLabel *label;
 @end
-#pragma mark - Test
+
 @implementation YYTextAttachmentExampleVC
 
 - (void)viewDidLoad {

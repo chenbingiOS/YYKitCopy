@@ -24,9 +24,8 @@
     [self addCell:@"Text Attributes 1" andClass:@"YYTextAttributeExampleVC"];
     [self addCell:@"Text Attributes 2" andClass:@"YYTextTagExampleVC"];
     [self addCell:@"Text Attachments" andClass:@"YYTextAttachmentExampleVC"];
-    [self addCell:@"Feed List Demo" andClass:@"YYFeedListDemoExample"];
-    [self addCell:@"Text Edit" andClass:@"YYTextEditExample"];
-    [self addCell:@"Text Parser (Markdown)" andClass:@"YYTextMarkdownExample"];
+    [self addCell:@"Text Edit" andClass:@"YYTextEditExampleVC"];
+    [self addCell:@"Text Parser (Markdown)" andClass:@"YYTextMarkdownExampleVC"];
     [self addCell:@"Text Parser (Emoticon)" andClass:@"YYTextEmoticonExample"];
     [self addCell:@"Text Binding" andClass:@"YYTextBindingExample"];
     [self addCell:@"Copy and Paste" andClass:@"YYTextCopyPasteExample"];
