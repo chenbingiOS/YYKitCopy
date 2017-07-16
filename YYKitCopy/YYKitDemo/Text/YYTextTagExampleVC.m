@@ -11,7 +11,7 @@
 #import "YYTextExampleHelper.h"
 
 @interface YYTextTagExampleVC () <YYTextViewDelegate>
-@property (nonatomic, strong) YYTextView *textView;
+@property (nonatomic, assign) YYTextView *textView;
 @end
 
 @implementation YYTextTagExampleVC

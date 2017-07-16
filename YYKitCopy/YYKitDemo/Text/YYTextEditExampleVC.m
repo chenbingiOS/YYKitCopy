@@ -11,7 +11,7 @@
 #import "YYTextExampleHelper.h"
 
 @interface YYTextEditExampleVC () <YYTextKeyboardObserver, YYTextViewDelegate>
-@property (nonatomic, strong) YYTextView *textView;
+@property (nonatomic, assign) YYTextView *textView;
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UISwitch *exclusionSwith;
 @end
