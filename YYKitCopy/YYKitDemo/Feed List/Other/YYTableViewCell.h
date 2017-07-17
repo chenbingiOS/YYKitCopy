@@ -1,5 +1,5 @@
 //
-//  WBStatusViewController.h
+//  YYTableViewCell.h
 //  YYTest
 //
 //  Created by 陈冰 on 2017/3/23.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WBStatusViewController : UIViewController
+@interface YYTableViewCell : UITableViewCell
 
 @end

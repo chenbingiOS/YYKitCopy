@@ -24,9 +24,8 @@
     [self addCell:@"Model" andClass:@"YYModelExampleVC"];
     [self addCell:@"Image" andClass:@"YYImageExampleVC"];
     [self addCell:@"Text" andClass:@"YYTextExampleVC"];
-    [self addCell:@"Utility"
-         andClass:@"YYUtilityExample"];
-    [self addCell:@"Feed List Demo" andClass:@"YYFeedListDemoExample"];
+    [self addCell:@"Utility" andClass:@"YYUtilityExampleVC"];
+    [self addCell:@"Feed List Demo" andClass:@"YYFeedListExampleVC"];
     
     [self.tableView reloadData];
 }

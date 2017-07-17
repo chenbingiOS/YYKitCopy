@@ -7,7 +7,6 @@
 //
 
 #import "WBStatusHelper.h"
-#import "YYKit.h"
 #import "WBModel.h"
 
 @implementation WBStatusHelper
@@ -50,6 +49,7 @@
     
     return [NSURL URLWithString:link];
 }
+
 + (YYMemoryCache *)imageCache {
     static YYMemoryCache *cache;
     static dispatch_once_t onceToken;
@@ -61,6 +61,7 @@
     });
     return cache;
 }
+
 + (NSBundle *)bundle {
     static NSBundle *bundle;
     static dispatch_once_t onceToken;
@@ -70,6 +71,7 @@
     });
     return bundle;
 }
+
 /** 从微博 bundle 里获取图片 (有缓存) */
 + (UIImage *)imageNamed:(NSString *)name {
     if (!name) return nil;
@@ -89,6 +91,7 @@
     [[self imageCache] setObject:image forKey:name];
     return image;
 }
+
 /* 将 Date 格式化成微博的友好显示 */
 + (NSString *)stringWithTimeLineDate:(NSDate *)date {
     if (!date) return nil;
@@ -131,6 +134,7 @@
         return [formatterFullDate stringFromDate:date];
     }
 }
+
 /* At正则 例如 @王思聪 */
 + (NSRegularExpression *)regexAt {
     static NSRegularExpression *regex;
@@ -151,6 +155,7 @@
     });
     return regex;
 }
+
 + (NSDictionary *)emoticonDic {
     static NSMutableDictionary *dic;
     static dispatch_once_t onceToken;
@@ -160,6 +165,7 @@
     });
     return dic;
 }
+
 + (NSMutableDictionary *)_emoticonDicFromPath:(NSString *)path {
     NSMutableDictionary *dic = [NSMutableDictionary new];
     WBEmoticonGroup *group = nil;
@@ -192,6 +198,7 @@
     }
     return dic;
 }
+
 /* 从path创建图片 (有缓存) */
 + (UIImage *)imageWithPath:(NSString *)path {
     if (!path) return nil;
@@ -213,4 +220,21 @@
     }
     return image;
 }
+
+/** 头像管理类 */
++ (YYWebImageManager *)avatarImageManager {
+    static YYWebImageManager *manager;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString *path = [[UIApplication sharedApplication].cachesPath stringByAppendingPathComponent:@"weibo.avatar"];
+        YYImageCache *cache = [[YYImageCache alloc] initWithPath:path];
+        manager = [[YYWebImageManager alloc] initWithCache:cache queue:[YYWebImageManager sharedManager].queue];
+        manager.sharedTransformBlock = ^UIImage * _Nullable(UIImage * _Nonnull image, NSURL * _Nonnull url) {
+            if (!image) return image;
+            return [image imageByRoundCornerRadius:100]; //  large value;
+        };
+    });
+    return manager;
+}
+
 @end

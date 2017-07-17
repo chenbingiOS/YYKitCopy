@@ -8,6 +8,7 @@
 
 #import "WBStatusCell.h"
 #import "WBStatusLayout.h"
+#import "WBStatusHelper.h"
 
 @implementation WBStatusTitleView
 
@@ -131,6 +132,12 @@
     } else {
         _titleView.hidden = YES;
     }
+    
+    /// 圆角头像
+    [_profileView.avatarView setImageWithURL:layout.status.user.avatarLarge /* profileImageURL */ placeholder:nil options:kNilOptions manager:[WBStatusHelper avatarImageManager] progress:nil transform:nil completion:nil];
+    _profileView.nameLabel.textLayout = layout.nameTextLayou;
+    _profileView.sourceLabel.textLayout = layout.sourceTextLayout;
+    _profileView.verifyType = layout.status.user.userVerifyType;
 }
 
 @end
@@ -155,6 +162,8 @@
 
 - (void)setLayout:(WBStatusLayout *)layout
 {
+    NSLog(@"cell Height %@", @(layout.height));
+    
     self.height = layout.height;
     self.contentView.height = layout.height;
     _statusView.layout = layout;

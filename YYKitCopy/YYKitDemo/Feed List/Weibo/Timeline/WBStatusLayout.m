@@ -130,7 +130,48 @@
     [self _layoutTitle];
     [self _layoutProfile];
     [self _layoutRetweet];
+    
+    if (_retweetHeight == 0) {
+        [self _layoutPics];
+        if (_picHeight == 0) {
+            [self _layoutCard];
+        }
+    }
+    [self _layoutText];
+    [self _layoutTag];
+    [self _layoutToolbar];
+    
+    // 计算总高度
+    _height = 0;
+    _height += _marginTop;
+    _height += _titleHeight;
+    _height += _profileHeight;
+    _height += _textHeight;
+    if (_retweetHeight > 0) {
+        _height += _retweetHeight;
+    } else if (_picHeight > 0) {
+        _height += _picHeight;
+    } else if (_cardHeight > 0) {
+        _height += _cardHeight;
+    }
+    
+    if (_tagHeight > 0) {
+        _height += _tagHeight;
+    } else {
+        if (_picHeight > 0 || _cardHeight > 0) {
+            _height += kWBCellPadding;
+        }
+    }
+    
+    _height += _toolbarHeight;
+    _height += _marginBottom;
 }
+
+- (void)_layoutPics {}
+- (void)_layoutCard {}
+- (void)_layoutText {}
+- (void)_layoutTag {}
+- (void)_layoutToolbar {}
 
 - (void)_layoutTitle {
     _titleHeight = 0;
@@ -321,6 +362,7 @@
 - (void)_layoutRetweetPics {
 //    [self]
 }
+
 - (void)_layoutPicsWithStatus:(WBStatus *)status isRetweet:(BOOL)isRetweet {
     if (isRetweet) {
         _retweetPicSize = CGSizeZero;

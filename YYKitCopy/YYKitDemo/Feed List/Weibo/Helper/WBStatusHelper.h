@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "YYKit.h"
+
 @interface WBStatusHelper : NSObject
 /** 将微博API提供的图片URL转换成可用的实际URL */
 + (NSURL *)defaultURLForImageURL:(id)imageURL;
@@ -31,4 +33,6 @@
 /* 从path创建图片 (有缓存) */
 + (UIImage *)imageWithPath:(NSString *)path;
 
+/** 头像管理类 */
++ (YYWebImageManager *)avatarImageManager;
 @end

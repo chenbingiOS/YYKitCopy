@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "YYKit.h"
 #import "YYTableViewCell.h"
+#import "WBModel.h"
 
 @class WBStatusCell;
 @class WBStatusLayout;
@@ -30,6 +31,7 @@
 // 功能
 @property (nonatomic, strong) UIButton *arrowButton;
 @property (nonatomic, strong) UIButton *followButton;
+@property (nonatomic, assign) WBUserVerifyType verifyType;
 // 附带自身属性
 @property (nonatomic, weak) WBStatusCell *cell;
 @end

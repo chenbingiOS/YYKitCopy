@@ -1,23 +1,23 @@
 //
-//  WBStatusViewController.m
+//  WBStatusTimelineViewController.m
 //  YYTest
 //
 //  Created by 陈冰 on 2017/3/23.
 //  Copyright © 2017年 GLAC. All rights reserved.
 //
 
-#import "WBStatusViewController.h"
+#import "WBStatusTimelineViewController.h"
 #import "YYTableView.h"
 #import "WBStatusCell.h"
 #import "WBModel.h"
 #import "WBStatusLayout.h"
 
-@interface WBStatusViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface WBStatusTimelineViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *layouts;
 @end
 
-@implementation WBStatusViewController
+@implementation WBStatusTimelineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -76,8 +76,7 @@
 {
     WBStatusCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
     if (!cell) {
-        cell = [[WBStatusCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
-        
+        cell = [[WBStatusCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];        
     }
     [cell setLayout:_layouts[indexPath.row]];
     return cell;
@@ -97,8 +96,8 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.frame = self.view.bounds;
-//        _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
-//        _tableView.scrollIndicatorInsets = _tableView.contentInset;
+        _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+        _tableView.scrollIndicatorInsets = _tableView.contentInset;
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.backgroundView.backgroundColor = [UIColor clearColor];
     }
