@@ -26,12 +26,12 @@
     [self addCell:@"Text Attachments" andClass:@"YYTextAttachmentExampleVC"];
     [self addCell:@"Text Edit" andClass:@"YYTextEditExampleVC"];
     [self addCell:@"Text Parser (Markdown)" andClass:@"YYTextMarkdownExampleVC"];
-    [self addCell:@"Text Parser (Emoticon)" andClass:@"YYTextEmoticonExample"];
-    [self addCell:@"Text Binding" andClass:@"YYTextBindingExample"];
-    [self addCell:@"Copy and Paste" andClass:@"YYTextCopyPasteExample"];
-    [self addCell:@"Undo and Redo" andClass:@"YYTextUndoRedoExample"];
-    [self addCell:@"Ruby Annotation" andClass:@"YYTextRubyExample"];
-    [self addCell:@"Async Display" andClass:@"YYTextAsyncExample"];
+    [self addCell:@"Text Parser (Emoticon)" andClass:@"YYTextEmoticonExampleVC"];
+    [self addCell:@"Text Binding" andClass:@"YYTextBindingExampleVC"];
+    [self addCell:@"Copy and Paste" andClass:@"YYTextCopyPasteExampleVC"];
+    [self addCell:@"Undo and Redo" andClass:@"YYTextUndoRedoExampleVC"];
+    [self addCell:@"Ruby Annotation" andClass:@"YYTextRubyExampleVC"];
+    [self addCell:@"Async Display" andClass:@"YYTextAsyncExampleVC"];
     [self.tableView reloadData];
 }
 
