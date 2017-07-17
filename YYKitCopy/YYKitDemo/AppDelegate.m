@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "BCVideoHomeVC.h"
+
 @interface YYExampleNavBar : UINavigationBar
 
 @end
@@ -59,29 +61,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 1.自定义一个栈视图控制器
-    YYExampleNavController *exaNC = [[YYExampleNavController alloc] initWithNavigationBarClass:[YYExampleNavBar class] toolbarClass:[UIToolbar class]];
-    if ([exaNC respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
-        exaNC.automaticallyAdjustsScrollViewInsets = NO;
-    }
-    // 2.根控制器压栈
-    YYRootViewController *rootVC = [YYRootViewController new];
-    [exaNC pushViewController:rootVC animated:NO];
+//    YYExampleNavController *exaNC = [[YYExampleNavController alloc] initWithNavigationBarClass:[YYExampleNavBar class] toolbarClass:[UIToolbar class]];
+//    if ([exaNC respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
+//        exaNC.automaticallyAdjustsScrollViewInsets = NO;
+//    }
+//    // 2.根控制器压栈
+//    YYRootViewController *rootVC = [YYRootViewController new];
+//    [exaNC pushViewController:rootVC animated:NO];
+//
     
-    self.rootViewController = exaNC;
+//    self.rootViewController = exaNC;
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = self.rootViewController;
+    // 视频下载播放软件
+    self.window.rootViewController = [BCVideoHomeVC new];
     self.window.backgroundColor = [UIColor grayColor];
     [self.window makeKeyWindow];
-
-    
-//    NSArray *localeIdentifiers = [NSLocale availableLocaleIdentifiers];
-//    NSLog(@"%@", localeIdentifiers);
-//    
-//    NSLog(@"%@", NSLocale.currentLocale.localeIdentifier);
-//    
-//    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-//    NSString *str = [locale displayNameForKey:NSLocaleIdentifier value:@"en_AD"];
-//    NSLog(@"%@", str);
     
     return YES;
 }
