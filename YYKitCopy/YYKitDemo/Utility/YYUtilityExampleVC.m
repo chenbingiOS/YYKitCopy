@@ -1,35 +1,35 @@
 //
-//  YYImageExampleVC.m
+//  YYUtilityExampleVC.m
 //  YYKitCopy
 //
-//  Created by  chenbing on 2017/7/11.
+//  Created by  chenbing on 2017/7/17.
 //  Copyright © 2017年 DTise. All rights reserved.
 //
 
-#import "YYImageExampleVC.h"
+#import "YYUtilityExampleVC.h"
 
-@interface YYImageExampleVC ()
+@interface YYUtilityExampleVC ()
 @property (nonatomic, strong) NSMutableArray *titles;
 @property (nonatomic, strong) NSMutableArray *classNames;
 @end
 
-@implementation YYImageExampleVC
+@implementation YYUtilityExampleVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.titles = @[].mutableCopy;
     self.classNames = @[].mutableCopy;
-    [self addCell:@"Animated Image" andClass:@"YYImageDisplayExampleVC"];
-    [self addCell:@"Progressive Image" andClass:@"YYImageProgressiveExampleVC"];
-    [self addCell:@"Web Image" andClass:@"YYWebImageExampleVC"];
-    [self addCell:@"Benchmark" andClass:@"YYImageBenchmarkVC"];
+    
+    [self addCell:@"Keychain" andClass:@"YYKeychainExampleVC"];
+
     [self.tableView reloadData];
 }
 
 - (void)addCell:(NSString *)title andClass:(NSString *)className {
     [self.titles addObject:title];
     [self.classNames addObject:className];
-}
+};
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.titles.count;
@@ -54,5 +54,6 @@
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
 
 @end
